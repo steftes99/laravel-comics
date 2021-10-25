@@ -1,0 +1,41 @@
+main{
+    background-color: #1C1C1C;
+    .container{
+        
+        .section-title{
+            padding: 5% 0;
+            font-size: 2rem;
+            color: #fff;
+        }
+        .card-section{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+                .card{
+                    width: calc((100% - (10px * 6))/6);
+                    margin: 40px 0;
+                        img{
+                            width: 100%;
+                            margin-bottom: 10px;
+                        }
+                        .title{
+                            text-transform: uppercase;
+                            max-width: 50%;
+                            margin: 0;
+                            color: #fff;
+                        }
+                }
+        }
+        .view-more{
+            background-color: #0C7CEC;
+            color: #fff;
+            display: block;
+            margin: auto;
+            padding: 1% 5%;
+            border: none;
+            text-transform: uppercase;
+        }
+    }
+
+        
+}
