@@ -18,10 +18,23 @@ Route::get('/', function () {
 })->name('home');
 
 Route::get('/comics', function () {
-    $data = ['cardsData' => config('comics')];
-    return view('comics', $data);
+    $comics = config('comics');
+    return view('comics', ['comics' => $comics]);
 })->name('comics');
 
 Route::get('/movies', function () {
     return view('movies');
 })->name('movies');
+
+Route::get('/comic/{id}', function ($id) {
+    
+    $comics = config('comics');
+
+    if(is_numeric($id) && ($id < count($comics) && $id >= 0)){
+        $comic = $comics[$id];
+        return view('comic', ['comic' => $comic]);
+    } else {
+        abort('404');
+    }
+
+})->name('comic');

@@ -1,0 +1,52 @@
+.comic-container{
+    background-color: white;
+        .top{
+            display: flex;
+            justify-content: center;
+            height: 40vh;
+            width: 90%;
+            margin: auto;
+            .left{
+
+            }
+            .center{
+                h1{
+                    text-transform: uppercase;
+                    text-align: center;
+                }
+                .price-container{
+                    width: 50%;
+                    height: 50px;
+                    background-color: #55ba59;
+                    margin: auto;
+                        p{
+                            display: inline-block;
+                            color: #9fe875;
+                            padding-left: 5%;
+                            padding-top: 2%;
+                        }
+                        span{
+                            color: white;
+                        }
+                        .avalaible{
+                           margin-left: 50%;
+                        }
+                }
+                p{
+                    max-width: 50%;
+                    margin: auto;
+                }
+            }
+            .right{
+                img{
+                    
+                }
+            }
+            
+        }
+        .bottom{
+            height: 40vh;
+            background-color: #f6f6f6;
+        }
+       
+}

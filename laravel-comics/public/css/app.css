@@ -45,6 +45,13 @@ header .jumbo {
 main {
   background-color: #1C1C1C;
 }
+main .container {
+  padding: 1%;
+}
+main .container h1 {
+  color: white;
+  text-align: center;
+}
 main .container .section-title {
   padding: 5% 0;
   font-size: 2rem;
@@ -77,4 +84,69 @@ main .container .view-more {
   padding: 1% 5%;
   border: none;
   text-transform: uppercase;
+}
+
+footer .footer-top {
+  height: 15vh;
+  background-color: #0C7CEC;
+}
+footer .footer-mid {
+  height: 60vh;
+  background-image: url("../img/footer-bg.jpg");
+  background-size: cover;
+}
+footer .footer-mid .container {
+  display: flex;
+  justify-content: space-around;
+}
+footer .footer-mid .container .left h1 {
+  color: white;
+}
+footer .footer-mid .container .right img {
+  width: 80%;
+}
+footer .footer-bottom {
+  height: 10vh;
+  background-color: #303030;
+}
+
+.comic-container {
+  background-color: white;
+}
+.comic-container .top {
+  display: flex;
+  justify-content: center;
+  height: 40vh;
+  width: 90%;
+  margin: auto;
+}
+.comic-container .top .center h1 {
+  text-transform: uppercase;
+  text-align: center;
+}
+.comic-container .top .center .price-container {
+  width: 50%;
+  height: 50px;
+  background-color: #55ba59;
+  margin: auto;
+}
+.comic-container .top .center .price-container p {
+  display: inline-block;
+  color: #9fe875;
+  padding-left: 5%;
+  padding-top: 2%;
+}
+.comic-container .top .center .price-container span {
+  color: white;
+}
+.comic-container .top .center .price-container .avalaible {
+  margin-left: 50%;
+}
+.comic-container .top .center p {
+  max-width: 50%;
+  margin: auto;
+}
+.comic-container .bottom {
+  height: 40vh;
+  background-color: #f6f6f6;
 }

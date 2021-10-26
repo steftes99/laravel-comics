@@ -1,0 +1,32 @@
+footer{
+    .footer-top{
+        height: 15vh;
+        background-color: #0C7CEC;
+    }
+    .footer-mid{
+        height: 60vh;
+        background-image: url('../img/footer-bg.jpg');
+        background-size: cover;
+            .container{
+                display: flex;
+                justify-content: space-around;
+                    .left{
+                        h1{
+                            color: white;
+                        }
+                    }
+                    .right{
+                        
+                        img{
+                            width: 80%;
+                            
+                            
+                        }
+                    }
+            }
+    }
+    .footer-bottom{
+        height: 10vh;
+        background-color: #303030;
+    }
+}

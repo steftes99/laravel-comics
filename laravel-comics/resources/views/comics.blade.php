@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('title', 'Comics')
+
 @section('content')
 <div class="container">
     <!-- titolo sezione -->
@@ -7,11 +9,15 @@
     <!-- sezione delle card -->
     <div class="card-section">
       {{-- <ImgCard v-for="(card,i) in cards" :key="i" :cardData="card"/> --}}
-      @foreach ($cardsData as $cardData)
+      @foreach ($comics as $comic)
+
         <div class="card">
-          <img src="{{$cardData['thumb']}}" :alt="{{$cardData['series']}}">
-          <div class="title"> {{$cardData['series']}} </div>
+          <a href="{{ url("/comic/$loop->index") }}">
+            <img src="{{$comic['thumb']}}" :alt="{{$comic['series']}}">
+            <div class="title"> {{$comic['series']}} </div>
+          </a>  
         </div>
+
       @endforeach
     </div>
     <!-- pulsante viewMore card -->
