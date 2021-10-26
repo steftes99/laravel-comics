@@ -3,7 +3,7 @@
         .top{
             display: flex;
             justify-content: center;
-            height: 40vh;
+            height: 70vh;
             width: 90%;
             margin: auto;
             .left{
@@ -47,6 +47,8 @@
         .bottom{
             height: 40vh;
             background-color: #f6f6f6;
+            display: flex;
+            justify-content: space-around;
         }
        
 }

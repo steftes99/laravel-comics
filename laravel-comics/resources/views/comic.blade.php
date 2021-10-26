@@ -21,7 +21,17 @@
             </div>
         </div>
         <div class="bottom">
-
+            <div class="bottom-left">
+                <h2>Talent</h2>
+                <p>Art by: </p>
+                <p>Written by</p>
+            </div>
+            <div class="bottom-right">
+                <h2>Specs</h2>
+                <p>Series: {{$comic['series']}}</p>
+                <p>U.S. Price: {{$comic['price']}}</p>
+                <p>On Sale Date: {{$comic['sale_date']}}</p>
+            </div>
         </div>
         
         
