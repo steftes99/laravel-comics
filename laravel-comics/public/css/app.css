@@ -66,6 +66,9 @@ main .container .card-section .card {
   width: calc((100% - 60px) / 6);
   margin: 40px 0;
 }
+main .container .card-section .card a {
+  text-decoration: none;
+}
 main .container .card-section .card img {
   width: 100%;
   margin-bottom: 10px;
